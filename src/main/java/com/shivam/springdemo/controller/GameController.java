@@ -11,11 +11,11 @@ public class GameController {
 
 	@Autowired
 	GameService service;
-	
+
 	@GetMapping("/game")
-	public String playGame(){
-		
+	public String playGame() {
+
 		return service.playGame();
 	}
-	
+
 }

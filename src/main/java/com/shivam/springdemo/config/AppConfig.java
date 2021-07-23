@@ -7,15 +7,12 @@ import org.springframework.context.annotation.Configuration;
 import com.shivam.springdemo.model.UNO;
 
 @Configuration
-@ComponentScan(basePackages ="com.shivam.springdemo")
+@ComponentScan(basePackages = "com.shivam.springdemo")
 public class AppConfig {
 
 	@Bean
-	public UNO unobean()
-	{
+	public UNO unobean() {
 		return new UNO();
 	}
-	
-	
-	
+
 }
