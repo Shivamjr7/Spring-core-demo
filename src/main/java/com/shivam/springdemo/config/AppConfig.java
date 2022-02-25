@@ -11,7 +11,7 @@ import com.shivam.springdemo.model.UNO;
 public class AppConfig {
 
 	@Bean
-	public UNO unobean() {
+	public UNO unoBean() {
 		return new UNO();
 	}
 
