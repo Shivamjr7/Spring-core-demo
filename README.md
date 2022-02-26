@@ -7,16 +7,18 @@ Why Spring ?
 * A framework reduces the boilerplate code to work with anything. Also framework implements design patterns which avoids the mistake done while implementing logic
 * Spring has modules designed for specific purpose : for example with Spring boot it takes minutes to develop an application , Spring MVC for web , You want security use Spring Security module , Spring JPA for txn management , Spring REST for developing REST service , Spring web flux for reactive programming and the list goes on
 * The point is it makes a developer life easy as we know where to look to accomplish a particular task
-———————————————————————————————————————————————————————
+  —————————————————————————————
 
  - [x] What is Inversion of Control : 
 * Transferring the control of managing beans or part of the program from the user to a container. 
-* IOC enables framework to manage custom code like creating objects 
-———————————————————————————————————————————————————————
+* IOC enables framework to manage custom code like creating objects
+  
+—————————————————————————————
 - [x] Dependency Injection :
 * This is a pattern we can use to implement IOC , we transfer the control to container for injecting object’s dependencies .
 * Container looks at the dependencies required for a bean to be created and injects them
-———————————————————————————————————————————————————————
+ 
+  —————————————————————————————
 - [x] IOC Container :
 *  A container which creates and manages all the beans defined by the user . User can define beans in a xml file or in java code and IOC container is responsible for managing their lifecycle
 * Provides loose coupling 
@@ -29,8 +31,9 @@ Why Spring ?
     * Application Context : Advanced version of bean factory , extends Bean factory
     * Loads all beans at startup 
     * Supports i18n , AOP and other enterprise app features
-    * Registers post processors automatically
-———————————————————————————————————————————————————————
+    * Registers post processors automatically 
+      
+—————————————————————————————
 
 Spring core basics : 
 
@@ -56,7 +59,7 @@ Spring core basics :
     * Calling getBean(“name”,”constructor param” ) : can be done for prototype beans
     * It is recommended to not call getBean and we should rely on it injected by spring 
 
-———————————————————————————————————————————————————————
+—————————————————————————————
 - [x] Bean Annotations :
     * @ComponentScan : scans packages for bean and registers them to containers , basePackages/basePackageClasses can be used to specify the packages to scan for beans. If no arg is specified then it scans package from where this annotation is present. Can use repeated annotation 
         * Filter types : There are 5 types of filter 
@@ -74,8 +77,9 @@ Spring core basics :
     * @RequestParam: to extract query parameters, form parameters and even files from the request 
         * We can say @RequestParam(name = “id”) or @RequestParam(“id”) or @RequestParam(value = “id”)
         * By default , params are required , we can set to required = false , can give defaultvalue = “somethings” and can map to Map or list 
-    * @Value : for injecting property value into beans 
-———————————————————————————————————————————————————————
+    * @Value : for injecting property value into beans
+      
+—————————————————————————————
 
 - [x] BeanPostProcessor: allows for custom modifications of new bean instances craeted by spring framework
 * Two callbacks : postProcessBeforeInitialization and postProcessAfterInitialization 
